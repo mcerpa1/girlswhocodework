@@ -1,0 +1,67 @@
+<style>
+  ul  {
+	min-width: 650px;
+	list-style: none;
+	padding-top: 10px;
+	}
+	ul li  {
+		display: inline;
+    float: left;
+	}
+  nav {
+    float: left;
+    max-width: 425px;
+    margin: 0;
+    padding: 10px;
+  }
+  nav ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  nav ul a {
+      text-decoration: none;
+  }
+  article {
+    margin-left: 500px;
+    border-left: 1px solid gray;
+    padding: 5em;
+    overflow: hidden;
+  }
+  rating * {
+  padding:0;
+  margin:0;
+  list-style:none;
+  }
+  ul.rating {
+  background:url(images/star.jpg) bottom;
+  height:21px;
+  width:115px;
+  overflow:hidden;
+  }
+  ul.rating li {
+  display:inline
+  }
+  .rating a {
+  display:block;
+  width:23px;
+  height:21px;
+  float:left;
+  text-indent:-9999px;
+  position:relative;
+  }
+  .rating a:hover {
+  background:url(images/star.jpg) center;
+  width:115px;
+  margin-left:-92px;
+  position:static;
+  }
+  .rating a:active {
+  background-position:top;
+  }
+
+
+
+
+
+
+</style>

@@ -1,0 +1,70 @@
+<html>
+<title> Comments </title>
+<style>
+#header {
+    height: 230px;
+    background-image: url(../images/header1.jpg);
+    background-repeat: no-repeat;
+    font-family: 'Shift', sans-serif;
+}
+#header h2 {
+    font-size: 4em;
+    position: relative;
+    top: 30px;
+    left: 550px;
+    display: inline;
+}
+#header p {
+    font-size: 1.3em;
+    font-weight: bold;
+    position: relative;
+    top: 50px;
+    left: 60px;
+    display: inline
+}
+#menu {
+    position: relative;
+    top: 100px;
+    left: 340px;
+    display: inline-block;
+}
+#menu li{
+    font-weight: bold;
+    display: inline;
+    text-transform: uppercase;
+    margin-right: 14px;
+}
+#menu input {
+    font-size: 0.7em;
+    text-transform: lowercase;
+    text-align: right;
+    position: relative;
+    top: -4px;
+}
+</style>
+<body>
+  <form method='post'>
+    NAME: <input type='text' name='name' id='name' /><br />
+
+    Email: <input type='text' name='email' id='email' /><br />
+
+    Comment:<br />
+    <textarea name='comment' id='comment'></textarea><br />
+
+    <input type='hidden' name='articleid' id='articleid' value='<? echo $_GET["id"]; ?>' />
+
+    <input type='submit' value='Submit' />
+  </form>
+  <div id="header">
+      <h2>Cinematron</h2>
+      <p>All the stuff you need to know about the movies</p>
+      <ul id="menu">
+          <li>home</li>
+          <li>premieres</li>
+          <li>box-office</li>
+          <li>photos</li>
+          <li><input type="search" placeholder="search"></li>
+      </ul>
+  </div>
+</body>
+</html>
